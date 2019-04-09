@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* CSS Document created by William Trabazo on March 26th, 2019*/
+/* CSS Document created by William Trabazo on April 8th, 2019*/
 
 body {
 	font-family: Arial;
@@ -33,9 +33,6 @@ h2 {
 h3 {
 	font-size: 17px;
 	letter-spacing: 0.5em;
-	border-bottom-width: 1px;
-	border-bottom-style: inset;
-	border-bottom-color: #FFF;
 	padding: 5px 0;
 	font-variant: small-caps;
 	font-style: italic;
@@ -49,11 +46,11 @@ a:link {
 }
 a:visited {
 	font-weight: bold;
-	color: #FFF;
+	color: #000;
 	text-decoration: none;
 }
 a:hover {
-	color: #000;
+	color: #fff;
 }
 
 /* list styles ----------------------------- */
@@ -83,16 +80,66 @@ th {
 
 /* border styles ------------------------------------ */
 hr {
-	border: solid #FFF 2px;
+	border: solid #000 2px;
 }
 
 img {
-	border: solid #FFF 2px;
+	border: solid #000 0px;
 
 }
 
 iframe {
-	border: solid #FFF 2px;
+	border: solid #000 0px;
 	padding: 9px;
 	margin: 9px;
+}
+
+/* DIV STYLES FOR PAGE LAYOUT */
+
+
+#container { 
+	width: 900px; 
+	margin: 0 auto; 
+	background-color: #380012; 
+	overflow: hidden; 
+}
+
+#header { 
+	width: 100%; 
+	background-color: #380012;
+	border-bottom: 3px solid #000;
+}
+
+#content { 
+	width: 600px;
+	float: left; 
+	padding-top: 20px;
+}
+
+#sidebar { 
+	width: 278px; 
+	float: right;
+	margin-top: 50px;
+	margin-right: 0px;
+	background: #000;
+	border: 1px solid #000;
+	border-radius: 12px;
+	box-shadow: 10px 10px 5px #000;
+}
+
+#sidebar p{
+	padding: 0;
+	float: right;
+}
+
+#footer { 
+	clear: both;
+	width: 100%; 
+	background-color: #380012;
+	border-top: 3px solid #000;
+}
+
+#footer p {
+	margin: 0;
+	padding: 40px;
 }

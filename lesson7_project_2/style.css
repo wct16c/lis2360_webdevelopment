@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------- HTML TAG STYLES ----------------------------- */
+
+body {
+  margin: 0px; /* always zero out defaul browser margins and padding */
+  padding: 0px;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+}
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+h1 {
+  padding: 20px 0;
+}
+h4 {
+  padding: 20px 0;
+  font-weight: bold;
+}
+table {
+	border: solid #fff 2px;
+	border-collapse:collapse;
+}
+td {
+	padding: 20px;
+	border: solid #fff 2px;
+}
+th {
+	font-weight: bold;
+	background-color: #fff;
+	text-align: center;
+	padding: 20px;
+	border: solid #fff 2px;
+}
+a:link {
+	color: #fff;
+}
+a:visited {
+	color: #000;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+/* -------------------------- PAGE SECTIONS ---------------------------- */
+/* Visual sections of page are defined below in order of presentation */  
+
+#splash {
+  background: url(images/pic1.jpg) no-repeat center top fixed;
+  background-size: cover;  
+  height: 1000px; /* dictates a taller section for title page allowing the background image to be seen */
+	
+}
+/* Do noty dictate height for remaining sections since the content will dictate heights. */
+#overview {
+	padding: 50px 0 60px 0; /* top padding provides space for nav bar, bottom padding for asthetics */	
+  background-color: #380012;
+	color: #fff;
+}
+
+#video {
+	padding: 50px 0 50px 0;	
+  background: url(images/pic2.jpg) no-repeat center top fixed;
+	background-size: cover;
+}
+
+#discography {
+	padding: 40px 0 60px 0;	
+  background-color: #380012;
+	
+}
+
+#footer{
+  	background-color: #380012;
+  	color: #fff;
+  	padding: 20px 0;
+
+}
+
+/* ---------------- CONTAINER STYLES ----------------- */
+/* Containers are used to keep the page content within bounds centered in the browser window. */
+.container {
+  width: 960px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.half_container { /* provides a two column presentation */
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/ 
+
+#navbar{
+	position: fixed; /* navbar should always be shown even when page is scrolled */
+	top: 0;
+	width: 100%;
+	height: 54px;
+	background-color: #380012; 
+}	
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+ul#menu {
+	list-style: none; /* eliminates bullets */
+	/* adjust padding top to adjust nav bar vertical position */
+	padding-top: 0px;
+} 
+ul#menu li {
+	float: left; /* changes list from vertical to horizontal */
+	padding-bottom: 20px;
+} 
+ul#menu li a.button {
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	/* this padding defines the size of the buttons */
+	padding: 5px 100px 5px 100px; 
+}
+/* change button color when mouse hovers over */
+ul#menu li a.button:hover {
+	background-color: #000;
+}  
+
+/* ---------------- TITLE PAGE STYLES ------------------- */
+
+#title-page{
+  width: 100%;
+  padding-top: 200px; /* provides a lot of space above title to view the background image */
+  color: #380012;
+  text-align: center;
+}
+#title-page h1 {
+  font-family: 'Titillium Web', sans-serif; /* Amaranth is a Google Font - see link in head of index.html */
+  font-size: 80px; 	
+  text-shadow: 5px 5px #fff; /* Shadow helps text to stand out from background */
+}
+#title-page h3 {
+  font-size: 1em;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 20px;
+  text-shadow: 1px 1px #000;
+}
+
+/* ------------------- FOOTER CREDITS --------------------- */
+
+#credits {
+  text-align: center;	
+}
+#credits table{      
+  margin: 0 auto;		/* centers the color palette table */
+}
+#credits p {
+  font-size: .8em;
+  margin: 10px 0;
+}
+
+/* ---------------------- MISC -----------------------------*/
+
+.fltright{
+	float:right;
+	margin: 20px;
+}
+.fltleft{
+	float:left;
+	margin: 20px 20px 20px 0;
+}
